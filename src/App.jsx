@@ -10,11 +10,23 @@ function App() {
     tg.expand()
   }, [])
   
-  // return (
-  //   <AppRouter/>  
-  // )
+  return (
+    <>
+      <div>
+        <h2>Telegram User</h2>
+        <p>Initial data: {tg.initData}</p>
+        <br />
+        <br />
+        <p>ID: {user?.id}</p>
+        <p>First name: {user?.first_name}</p>
+        <p>Last name: {user?.last_name}</p>
+        <p>Username: {user?.username}</p>
+        <p>Language: {user?.language_code}</p>
+      </div>
 
-  return user
+      <AppRouter />
+    </>
+  );
 }
 
 export default App
